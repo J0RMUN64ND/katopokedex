@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#055 골덕 — KANTO POKÉDEX</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .detail-wrap { max-width: 600px; margin: 0 auto; padding: calc(var(--nav-height) + 40px) 20px 80px; }
+    .back-link { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 28px; transition: color .15s; }
+    .back-link:hover { color: var(--gold-pale); }
+    .detail-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .detail-img-area { background: #f0f4f8; display: flex; align-items: center; justify-content: center; padding: 40px; position: relative; border-bottom: 1px solid var(--border); }
+    .detail-num { position: absolute; top: 16px; left: 20px; color: var(--muted); font-size: 13px; font-weight: 800; letter-spacing: .06em; }
+    .detail-img { width: 180px; height: 180px; object-fit: contain; }
+    .detail-info { padding: 24px 28px 28px; }
+    .detail-name { font-size: 28px; font-weight: 900; color: var(--text); margin-bottom: 12px; }
+    .detail-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .detail-types { display: flex; gap: 6px; }
+    .detail-types .type-badge { font-size: 12px; padding: 4px 12px; }
+    .detail-category { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .06em; }
+    .detail-section { border-top: 1px solid var(--border); padding-top: 18px; margin-top: 18px; }
+    .detail-section-title { color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+    .ability-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .ability-badge { background: #f0f4f8; border: 1px solid var(--border); border-radius: 3px; color: var(--text); font-size: 12px; font-weight: 700; padding: 4px 10px; }
+    .ability-badge.hidden { border-style: dashed; color: var(--muted); background: #fafafa; }
+    .stat-row { display: flex; gap: 20px; flex-wrap: wrap; }
+    .stat-item { display: flex; flex-direction: column; gap: 3px; }
+    .stat-label { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+    .stat-value { color: var(--gold-pale); font-size: 15px; font-weight: 800; }
+    .gender-bar { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+    .gender-track { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; display: flex; }
+    .gender-m { background: #5080d0; height: 100%; }
+    .gender-f { background: #d05080; height: 100%; }
+    .gender-label { font-size: 11px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+    .ecology-text { color: var(--text); font-size: 14px; line-height: 1.8; }
+    .detail-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 28px; }
+    .nav-btn { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; color: var(--muted); font-size: 13px; font-weight: 700; padding: 10px 16px; text-decoration: none; transition: border-color .15s, color .15s, background .15s; }
+    .nav-btn:hover { border-color: var(--border-gold); color: var(--gold-pale); background: var(--card-hover); }
+    .nav-btn.disabled { opacity: .3; cursor: default; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KANTO POKÉDEX</div>
+    <nav><a href="../202313515.html">메인 도감</a></nav>
+  </header>
+  <div class="detail-wrap">
+    <a class="back-link" href="../202313515.html">&#8592; 전체 목록으로</a>
+    <div class="detail-card">
+      <div class="detail-img-area">
+        <span class="detail-num">#055</span>
+        <img src="../media/0055.webp" alt="골덕" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      </div>
+      <div class="detail-info">
+        <div class="detail-name">골덕</div>
+        <div class="detail-meta">
+          <div class="detail-types"><span class="type-badge 물">물</span></div>
+          <span class="detail-category">오리 포켓몬</span>
+        </div>
+        <div class="detail-section">
+          <div class="detail-section-title">특성</div>
+          <div class="ability-list"><span class="ability-badge">습기</span><span class="ability-badge">구름구름</span><span class="ability-badge hidden">스위프트스윔 (숨겨진 특성)</span></div>
+        </div>
+        <div class="detail-section">
+          <div class="detail-section-title">포획률 &amp; 성비</div>
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="stat-label">포획률</span>
+              <span class="stat-value">75 / 255</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">성비</span>
+              <div class="gender-bar"><span class="gender-label">♂ 50%</span><div class="gender-track"><div class="gender-m" style="width:50%"></div><div class="gender-f" style="width:50%"></div></div><span class="gender-label">50% ♀</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-section">
+          <div class="detail-section-title">생태</div>
+          <p class="ecology-text">고라파덕에서 진화한 포켓몬. 손발의 물갈퀴와 유선형의 몸이 수중에서 무서울 만큼 빠른 스피드를 만들어낸다. 금메달리스트보다 단연 빠르다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="detail-nav">
+      <a class="nav-btn" href="0054.html">&#8592; #054 고라파덕</a>
+      <a class="nav-btn" href="0056.html">#056 망키 &#8594;</a>
+    </div>
+  </div>
+<script src="detail.js"></script>
+</body>
+</html>
