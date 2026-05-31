@@ -366,3 +366,20 @@ main {
   display: block;
 }
 
+/* ── Detail page cry button ── */
+.cry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.cry-btn:hover { opacity: .82; }
+
