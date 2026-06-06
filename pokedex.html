@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전체 도감 목록 — KANTO POKÉDEX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pokedex-list-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: calc(var(--nav-height) + 28px) 20px 80px;
+    }
+
+    .gen-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .gen-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 18px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color .15s, box-shadow .15s;
+    }
+
+    .gen-card:hover {
+      border-color: var(--border-gold);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .gen-card.active-region {
+      border-color: var(--red);
+      border-width: 2px;
+    }
+
+    .gen-card.disabled {
+      opacity: .45;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .gen-num {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .gen-region {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .gen-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: .04em;
+      margin-bottom: 10px;
+    }
+
+    .gen-range {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      background: #f0f4f8;
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .gen-card.active-region .gen-range {
+      background: rgba(255,31,31,.08);
+      color: var(--red);
+    }
+
+    @media (max-width: 600px) {
+      .gen-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">POKÉDEX</div>
+    <nav>
+      <a href="pokedex.html" class="active">전국도감</a>
+      <a href="types.html">타입 상성표</a>
+    </nav>
+  </header>
+
+  <div class="pokedex-list-wrap">
+
+    <div class="page-header">
+      <h1>전국 도감</h1>
+      <div class="count">9 REGIONS</div>
+    </div>
+
+    <div class="gen-grid">
+
+      <a class="gen-card active-region" href="202313515.html">
+        <div class="gen-num">1세대</div>
+        <div class="gen-region">관동도감</div>
+        <div class="gen-name">Kanto</div>
+        <span class="gen-range">#001 – #151 &nbsp;·&nbsp; 151마리</span>
+      </a>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">2세대</div>
+        <div class="gen-region">성도도감</div>
+        <div class="gen-name">Johto</div>
+        <span class="gen-range">#152 – #251 &nbsp;·&nbsp; 100마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">3세대</div>
+        <div class="gen-region">호연도감</div>
+        <div class="gen-name">Hoenn</div>
+        <span class="gen-range">#252 – #386 &nbsp;·&nbsp; 135마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">4세대</div>
+        <div class="gen-region">신오도감</div>
+        <div class="gen-name">Sinnoh</div>
+        <span class="gen-range">#387 – #493 &nbsp;·&nbsp; 107마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">5세대</div>
+        <div class="gen-region">하나도감</div>
+        <div class="gen-name">Unova</div>
+        <span class="gen-range">#494 – #649 &nbsp;·&nbsp; 156마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">6세대</div>
+        <div class="gen-region">칼로스도감</div>
+        <div class="gen-name">Kalos</div>
+        <span class="gen-range">#650 – #721 &nbsp;·&nbsp; 72마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">7세대</div>
+        <div class="gen-region">알로라도감</div>
+        <div class="gen-name">Alola</div>
+        <span class="gen-range">#722 – #809 &nbsp;·&nbsp; 88마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">8세대</div>
+        <div class="gen-region">가라르도감</div>
+        <div class="gen-name">Galar</div>
+        <span class="gen-range">#810 – #905 &nbsp;·&nbsp; 96마리</span>
+      </div>
+
+      <div class="gen-card disabled">
+        <div class="gen-num">9세대</div>
+        <div class="gen-region">팔데아도감</div>
+        <div class="gen-name">Paldea</div>
+        <span class="gen-range">#906 – #1025 &nbsp;·&nbsp; 120마리</span>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

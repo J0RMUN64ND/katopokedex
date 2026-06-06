@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타입 상성표 — KANTO POKÉDEX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .type-badge.악 {
+      background: #705848;
+    }
+
+    .types-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: calc(var(--nav-height) + 28px) 20px 80px;
+    }
+
+    .chart-note {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    /* 표 스크롤 컨테이너 */
+    .chart-container {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card-bg);
+    }
+
+    /* ── HTML 표(table) 핵심 태그 활용 ── */
+    .type-chart {
+      border-collapse: collapse;
+      min-width: 720px;
+      width: 100%;
+      font-size: 11px;
+    }
+
+    /* caption: 표 제목 */
+    .type-chart caption {
+      caption-side: top;
+      padding: 14px 18px 12px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--muted);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* colgroup/col: 라벨 열 강조 */
+    .type-chart col.col-label {
+      background: #f8f9fb;
+    }
+
+    /* thead > tr > th (scope="col"): 방어 타입 열 헤더 */
+    .type-chart thead th {
+      height: 80px;
+      padding: 6px 2px 5px;
+      border-bottom: 2px solid var(--border);
+      border-right: 1px solid #eef0f4;
+      background: #f8f9fb;
+      text-align: center;
+      vertical-align: bottom;
+    }
+
+    /* 좌상단 코너 셀 */
+    .type-chart th.corner {
+      background: #f0f4f8;
+      font-size: 9px;
+      color: var(--muted);
+      padding: 6px 8px;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: .04em;
+      border-right: 2px solid var(--border);
+      min-width: 68px;
+    }
+
+    /* tbody > tr > th (scope="row"): 공격 타입 행 헤더 */
+    .type-chart tbody th {
+      padding: 4px 8px 4px 6px;
+      border-right: 2px solid var(--border);
+      border-bottom: 1px solid #eef0f4;
+      background: #f8f9fb;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* tbody > tr > td: 상성 수치 셀 */
+    .type-chart td {
+      width: 32px;
+      height: 28px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #eef0f4;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* 효과가 뛰어남 ×2 */
+    .eff-2 {
+      background: #e53935;
+      color: white;
+    }
+
+    /* 효과가 별로 ×½ */
+    .eff-h {
+      background: #5c87d6;
+      color: white;
+    }
+
+    /* 효과 없음 ×0 — 진회색 */
+    .eff-0 {
+      background: #888;
+    }
+
+    /* 호버 하이라이트 — 빈 셀만 강조, 색 셀은 유지 */
+    .type-chart tr:hover td:not(.eff-2):not(.eff-h):not(.eff-0),
+    .type-chart tr:hover th {
+      background-color: #fff8e1;
+    }
+
+    /* 타입명 세로 표시 */
+    .type-vert {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      display: inline-block;
+      padding: 3px 4px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .03em;
+    }
+
+    /* ── 범례 ── */
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      padding: 14px 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .legend-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--muted);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .legend-cell {
+      width: 30px;
+      height: 24px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="202313515.html">KANTO POKÉDEX</a>
+    <nav>
+      <a href="pokedex.html">전국도감</a>
+      <a href="types.html" class="active">타입 상성표</a>
+    </nav>
+  </header>
+
+  <div class="types-wrap">
+
+    <div class="page-header">
+      <h1>타입 상성표</h1>
+      <div class="count">18 TYPES</div>
+    </div>
+
+    <p class="chart-note">세로(↓) = 공격 타입 &nbsp;|&nbsp; 가로(→) = 방어(상대) 타입 &nbsp;|&nbsp; 최신 기준</p>
+
+    <div class="chart-container">
+      <table class="type-chart">
+        <caption>포켓몬 타입 상성표</caption>
+
+        <colgroup>
+          <col class="col-label">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th class="corner" scope="col">공격↓&nbsp;/&nbsp;방어→</th>
+            <th scope="col"><span class="type-vert" style="background:#A8A878;color:#555;">노말</span></th>
+            <th scope="col"><span class="type-vert" style="background:#F08030;color:white;">불꽃</span></th>
+            <th scope="col"><span class="type-vert" style="background:#6890F0;color:white;">물</span></th>
+            <th scope="col"><span class="type-vert" style="background:#F8D030;color:#555;">전기</span></th>
+            <th scope="col"><span class="type-vert" style="background:#78C850;color:white;">풀</span></th>
+            <th scope="col"><span class="type-vert" style="background:#98D8D8;color:#555;">얼음</span></th>
+            <th scope="col"><span class="type-vert" style="background:#C03028;color:white;">격투</span></th>
+            <th scope="col"><span class="type-vert" style="background:#A040A0;color:white;">독</span></th>
+            <th scope="col"><span class="type-vert" style="background:#E0C068;color:#555;">땅</span></th>
+            <th scope="col"><span class="type-vert" style="background:#A890F0;color:white;">비행</span></th>
+            <th scope="col"><span class="type-vert" style="background:#F85888;color:white;">에스퍼</span></th>
+            <th scope="col"><span class="type-vert" style="background:#A8B820;color:#555;">벌레</span></th>
+            <th scope="col"><span class="type-vert" style="background:#B8A038;color:#555;">바위</span></th>
+            <th scope="col"><span class="type-vert" style="background:#705898;color:white;">고스트</span></th>
+            <th scope="col"><span class="type-vert" style="background:#7038F8;color:white;">드래곤</span></th>
+            <th scope="col"><span class="type-vert" style="background:#705848;color:white;">악</span></th>
+            <th scope="col"><span class="type-vert" style="background:#B8B8D0;color:#555;">강철</span></th>
+            <th scope="col"><span class="type-vert" style="background:#EE99AC;color:#555;">페어리</span></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row"><span class="type-badge 노말">노말</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-0"></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 불꽃">불꽃</span></th>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 물">물</span></th>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 전기">전기</span></th>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-0"></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 풀">풀</span></th>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 얼음">얼음</span></th>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 격투">격투</span></th>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td class="eff-0"></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 독">독</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td class="eff-0"></td>
+            <td class="eff-2">2</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 땅">땅</span></th>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-0"></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 비행">비행</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 에스퍼">에스퍼</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-0"></td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 벌레">벌레</span></th>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 바위">바위</span></th>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 고스트">고스트</span></th>
+            <td class="eff-0"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 드래곤">드래곤</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-0"></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 악">악</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-h">½</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 강철">강철</span></th>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td class="eff-2">2</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="type-badge 페어리">페어리</span></th>
+            <td></td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="eff-2">2</td>
+            <td class="eff-2">2</td>
+            <td class="eff-h">½</td>
+            <td></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+    <!-- 범례 -->
+    <div class="legend">
+      <span class="legend-title">범례</span>
+      <div class="legend-item">
+        <div class="legend-cell eff-2">2</div>
+        <span>효과가 뛰어남 ×2</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell" style="background:#f0f4f8;color:#bbb;border:1px solid var(--border);">—</div>
+        <span>보통 ×1</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell eff-h">½</div>
+        <span>효과가 별로 ×½</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-cell eff-0"></div>
+        <span>효과 없음 ×0</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

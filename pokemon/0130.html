@@ -1,52 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>#130 갸라도스 — KANTO POKÉDEX</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    .detail-wrap { max-width: 600px; margin: 0 auto; padding: calc(var(--nav-height) + 40px) 20px 80px; }
-    .back-link { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 28px; transition: color .15s; }
-    .back-link:hover { color: var(--gold-pale); }
-    .detail-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-    .detail-img-area { background: #f0f4f8; display: flex; align-items: center; justify-content: center; padding: 40px; position: relative; border-bottom: 1px solid var(--border); }
-    .detail-num { position: absolute; top: 16px; left: 20px; color: var(--muted); font-size: 13px; font-weight: 800; letter-spacing: .06em; }
-    .detail-img { width: 180px; height: 180px; object-fit: contain; }
-    .detail-info { padding: 24px 28px 28px; }
-    .detail-name { font-size: 28px; font-weight: 900; color: var(--text); margin-bottom: 12px; }
-    .detail-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
-    .detail-types { display: flex; gap: 6px; }
-    .detail-types .type-badge { font-size: 12px; padding: 4px 12px; }
-    .detail-category { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .06em; }
-    .detail-section { border-top: 1px solid var(--border); padding-top: 18px; margin-top: 18px; }
-    .detail-section-title { color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
-    .ability-list { display: flex; flex-wrap: wrap; gap: 6px; }
-    .ability-badge { background: #f0f4f8; border: 1px solid var(--border); border-radius: 3px; color: var(--text); font-size: 12px; font-weight: 700; padding: 4px 10px; }
-    .ability-badge.hidden { border-style: dashed; color: var(--muted); background: #fafafa; }
-    .stat-row { display: flex; gap: 20px; flex-wrap: wrap; }
-    .stat-item { display: flex; flex-direction: column; gap: 3px; }
-    .stat-label { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .06em; }
-    .stat-value { color: var(--gold-pale); font-size: 15px; font-weight: 800; }
-    .gender-bar { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
-    .gender-track { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; display: flex; }
-    .gender-m { background: #5080d0; height: 100%; }
-    .gender-f { background: #d05080; height: 100%; }
-    .gender-label { font-size: 11px; font-weight: 700; color: var(--muted); white-space: nowrap; }
-    .ecology-text { color: var(--text); font-size: 14px; line-height: 1.8; }
-    .detail-nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 28px; }
-    .nav-btn { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; color: var(--muted); font-size: 13px; font-weight: 700; padding: 10px 16px; text-decoration: none; transition: border-color .15s, color .15s, background .15s; }
-    .nav-btn:hover { border-color: var(--border-gold); color: var(--gold-pale); background: var(--card-hover); }
-    .nav-btn.disabled { opacity: .3; cursor: default; pointer-events: none; }
-  </style>
 </head>
 <body>
   <header>
-    <div class="logo">KANTO POKÉDEX</div>
-    <nav><a href="../202313515.html">메인 도감</a></nav>
+    <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
+    <nav></nav>
   </header>
   <div class="detail-wrap">
-    <a class="back-link" href="../202313515.html">&#8592; 전체 목록으로</a>
+    <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
       <div class="detail-img-area">
         <span class="detail-num">#130</span>
@@ -93,3 +59,5 @@
 <script src="detail.js"></script>
 </body>
 </html>
+
+
