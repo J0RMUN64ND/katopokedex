@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -7,11 +7,7 @@
   <title>타입 상성표 — KANTO POKÉDEX</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .type-badge.악 {
-      background: #705848;
-    }
-
-    .types-wrap {
+.types-wrap {
       max-width: 1200px;
       margin: 0 auto;
       padding: calc(var(--nav-height) + 28px) 20px 80px;
@@ -24,7 +20,6 @@
       margin-bottom: 12px;
     }
 
-    /* 표 스크롤 컨테이너 */
     .chart-container {
       overflow-x: auto;
       border: 1px solid var(--border);
@@ -32,7 +27,7 @@
       background: var(--card-bg);
     }
 
-    /* ── HTML 표(table) 핵심 태그 활용 ── */
+    
     .type-chart {
       border-collapse: collapse;
       min-width: 720px;
@@ -40,7 +35,7 @@
       font-size: 11px;
     }
 
-    /* caption: 표 제목 */
+    
     .type-chart caption {
       caption-side: top;
       padding: 14px 18px 12px;
@@ -53,12 +48,12 @@
       border-bottom: 1px solid var(--border);
     }
 
-    /* colgroup/col: 라벨 열 강조 */
+    
     .type-chart col.col-label {
       background: #f8f9fb;
     }
 
-    /* thead > tr > th (scope="col"): 방어 타입 열 헤더 */
+    
     .type-chart thead th {
       height: 80px;
       padding: 6px 2px 5px;
@@ -69,7 +64,7 @@
       vertical-align: bottom;
     }
 
-    /* 좌상단 코너 셀 */
+    
     .type-chart th.corner {
       background: #f0f4f8;
       font-size: 9px;
@@ -82,7 +77,7 @@
       min-width: 68px;
     }
 
-    /* tbody > tr > th (scope="row"): 공격 타입 행 헤더 */
+    
     .type-chart tbody th {
       padding: 4px 8px 4px 6px;
       border-right: 2px solid var(--border);
@@ -92,7 +87,7 @@
       white-space: nowrap;
     }
 
-    /* tbody > tr > td: 상성 수치 셀 */
+    
     .type-chart td {
       width: 32px;
       height: 28px;
@@ -103,30 +98,30 @@
       font-weight: 800;
     }
 
-    /* 효과가 뛰어남 ×2 */
+    
     .eff-2 {
       background: #e53935;
       color: white;
     }
 
-    /* 효과가 별로 ×½ */
+    
     .eff-h {
       background: #5c87d6;
       color: white;
     }
 
-    /* 효과 없음 ×0 — 진회색 */
+    
     .eff-0 {
       background: #888;
     }
 
-    /* 호버 하이라이트 — 빈 셀만 강조, 색 셀은 유지 */
+    
     .type-chart tr:hover td:not(.eff-2):not(.eff-h):not(.eff-0),
     .type-chart tr:hover th {
       background-color: #fff8e1;
     }
 
-    /* 타입명 세로 표시 */
+    
     .type-vert {
       writing-mode: vertical-rl;
       text-orientation: mixed;
@@ -138,7 +133,7 @@
       letter-spacing: .03em;
     }
 
-    /* ── 범례 ── */
+    
     .legend {
       display: flex;
       align-items: center;
@@ -616,7 +611,7 @@
       </table>
     </div>
 
-    <!-- 범례 -->
+    
     <div class="legend">
       <span class="legend-title">범례</span>
       <div class="legend-item">

@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#133</span>
-        <img src="../media/0133.webp" alt="이브이" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#133</span>
+        <img src="../media/images/0133.webp" alt="이브이" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">이브이</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 노말">노말</span></div>
           <span class="detail-category">진화 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">도주</span><span class="ability-badge">적응력</span><span class="ability-badge hidden">위험예지 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/133_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/133_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">45 / 255</span>
@@ -45,9 +45,21 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">사는 환경에 따라 돌연변이하는 불안정한 유전자를 지닌 포켓몬이다. 돌의 방사선이 진화를 일으킨다. 샤워스, 쥬피썬더, 또는 부스터로 진화한다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">사는 환경에 따라 돌연변이하는 불안정한 유전자를 지닌 포켓몬이다. 돌의 방사선이 진화를 일으킨다. 샤워스, 쥬피썬더, 또는 부스터로 진화한다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <span class="evo-node evo-current">이브이</span>
+            <span class="evo-arrow">→</span>
+            <a class="evo-node evo-link" href="0134.html">샤미드<div class="evo-tooltip"><img src="../media/images/0134.webp"></div></a>
+            <span class="evo-sep"> / </span>
+            <a class="evo-node evo-link" href="0135.html">쥬피썬더<div class="evo-tooltip"><img src="../media/images/0135.webp"></div></a>
+            <span class="evo-sep"> / </span>
+            <a class="evo-node evo-link" href="0136.html">부스터<div class="evo-tooltip"><img src="../media/images/0136.webp"></div></a>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +68,13 @@
       <a class="nav-btn" href="0134.html">#134 샤미드 &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 

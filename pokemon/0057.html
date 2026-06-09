@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#057</span>
-        <img src="../media/0057.webp" alt="성원숭" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#057</span>
+        <img src="../media/images/0057.webp" alt="성원숭" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">성원숭</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 격투">격투</span></div>
           <span class="detail-category">돼지원숭이 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">의기양양</span><span class="ability-badge">분노의경혈</span><span class="ability-badge hidden">오기 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/057_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/057_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">75 / 255</span>
@@ -45,9 +45,17 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">망키에서 진화한 포켓몬. 격렬하게 화를 내면 혈액 순환이 좋아져 근육의 힘을 강하게 만든다. 단 머리 회전은 느려진다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">망키에서 진화한 포켓몬. 격렬하게 화를 내면 혈액 순환이 좋아져 근육의 힘을 강하게 만든다. 단 머리 회전은 느려진다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <a class="evo-node evo-link" href="0056.html">망키<div class="evo-tooltip"><img src="../media/images/0056.webp"></div></a>
+            <span class="evo-arrow">→</span>
+            <span class="evo-node evo-current">성원숭</span>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +64,13 @@
       <a class="nav-btn" href="0058.html">#058 가디 &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 

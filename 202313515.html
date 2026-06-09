@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -24,11 +24,11 @@
       <div class="count">151마리</div>
     </div>
 
-    <section class="control-panel">
-      <div class="search-wrap">
+    <section class="filter-bar">
+      <div class="search-box">
         <input type="text" id="search-input" placeholder="검색어를 입력하세요 (이름, 번호)" autocomplete="off">
       </div>
-      <div class="filter-buttons">
+      <div class="filter-group">
         <button class="filter-btn active" data-type="all">전체</button>
         <button class="filter-btn" data-type="노말">노말</button>
         <button class="filter-btn" data-type="불꽃">불꽃</button>
@@ -50,1062 +50,1062 @@
       </div>
     </section>
 
-    <div class="results-bar"><span id="results-count">151개 결과</span></div>
+    <div class="result-bar"><span id="result-count">151개 결과</span></div>
 
-    <section class="pokedex-grid">
+    <section class="card-grid">
       <a class="pokemon-card" href="pokemon/0001.html" data-types="풀 독" data-name="이상해씨" data-id="001">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#001</span><img src="media/0001.webp" alt="이상해씨"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#001</span><img src="media/images/0001.webp" alt="이상해씨"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">이상해씨</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0002.html" data-types="풀 독" data-name="이상해풀" data-id="002">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#002</span><img src="media/0002.webp" alt="이상해풀"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#002</span><img src="media/images/0002.webp" alt="이상해풀"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">이상해풀</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0003.html" data-types="풀 독" data-name="이상해꽃" data-id="003">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#003</span><img src="media/0003.webp" alt="이상해꽃"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#003</span><img src="media/images/0003.webp" alt="이상해꽃"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">이상해꽃</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0004.html" data-types="불꽃" data-name="파이리" data-id="004">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#004</span><img src="media/0004.webp" alt="파이리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#004</span><img src="media/images/0004.webp" alt="파이리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">파이리</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0005.html" data-types="불꽃" data-name="리자드" data-id="005">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#005</span><img src="media/0005.webp" alt="리자드"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#005</span><img src="media/images/0005.webp" alt="리자드"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">리자드</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0006.html" data-types="불꽃 비행" data-name="리자몽" data-id="006">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#006</span><img src="media/0006.webp" alt="리자몽"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#006</span><img src="media/images/0006.webp" alt="리자몽"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">리자몽</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0007.html" data-types="물" data-name="꼬부기" data-id="007">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#007</span><img src="media/0007.webp" alt="꼬부기"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#007</span><img src="media/images/0007.webp" alt="꼬부기"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">꼬부기</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0008.html" data-types="물" data-name="어니부기" data-id="008">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#008</span><img src="media/0008.webp" alt="어니부기"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#008</span><img src="media/images/0008.webp" alt="어니부기"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">어니부기</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0009.html" data-types="물" data-name="거북왕" data-id="009">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#009</span><img src="media/0009.webp" alt="거북왕"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#009</span><img src="media/images/0009.webp" alt="거북왕"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">거북왕</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0010.html" data-types="벌레" data-name="캐터피" data-id="010">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#010</span><img src="media/0010.webp" alt="캐터피"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#010</span><img src="media/images/0010.webp" alt="캐터피"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">캐터피</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0011.html" data-types="벌레" data-name="단데기" data-id="011">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#011</span><img src="media/0011.webp" alt="단데기"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#011</span><img src="media/images/0011.webp" alt="단데기"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">단데기</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0012.html" data-types="벌레 비행" data-name="버터플" data-id="012">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#012</span><img src="media/0012.webp" alt="버터플"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#012</span><img src="media/images/0012.webp" alt="버터플"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">버터플</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0013.html" data-types="벌레 독" data-name="뿔충이" data-id="013">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#013</span><img src="media/0013.webp" alt="뿔충이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#013</span><img src="media/images/0013.webp" alt="뿔충이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">뿔충이</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0014.html" data-types="벌레 독" data-name="딱충이" data-id="014">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#014</span><img src="media/0014.webp" alt="딱충이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#014</span><img src="media/images/0014.webp" alt="딱충이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">딱충이</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0015.html" data-types="벌레 독" data-name="독침붕" data-id="015">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#015</span><img src="media/0015.webp" alt="독침붕"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#015</span><img src="media/images/0015.webp" alt="독침붕"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">독침붕</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0016.html" data-types="노말 비행" data-name="구구" data-id="016">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#016</span><img src="media/0016.webp" alt="구구"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#016</span><img src="media/images/0016.webp" alt="구구"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">구구</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0017.html" data-types="노말 비행" data-name="피죤" data-id="017">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#017</span><img src="media/0017.webp" alt="피죤"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#017</span><img src="media/images/0017.webp" alt="피죤"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">피죤</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0018.html" data-types="노말 비행" data-name="피죤투" data-id="018">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#018</span><img src="media/0018.webp" alt="피죤투"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#018</span><img src="media/images/0018.webp" alt="피죤투"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">피죤투</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0019.html" data-types="노말" data-name="꼬렛" data-id="019">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#019</span><img src="media/0019.webp" alt="꼬렛"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#019</span><img src="media/images/0019.webp" alt="꼬렛"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">꼬렛</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0020.html" data-types="노말" data-name="레트라" data-id="020">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#020</span><img src="media/0020.webp" alt="레트라"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#020</span><img src="media/images/0020.webp" alt="레트라"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">레트라</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0021.html" data-types="노말 비행" data-name="깨비참" data-id="021">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#021</span><img src="media/0021.webp" alt="깨비참"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#021</span><img src="media/images/0021.webp" alt="깨비참"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">깨비참</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0022.html" data-types="노말 비행" data-name="깨비드릴조" data-id="022">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#022</span><img src="media/0022.webp" alt="깨비드릴조"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#022</span><img src="media/images/0022.webp" alt="깨비드릴조"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">깨비드릴조</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0023.html" data-types="독" data-name="아보" data-id="023">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#023</span><img src="media/0023.webp" alt="아보"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#023</span><img src="media/images/0023.webp" alt="아보"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">아보</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0024.html" data-types="독" data-name="아보크" data-id="024">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#024</span><img src="media/0024.webp" alt="아보크"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#024</span><img src="media/images/0024.webp" alt="아보크"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">아보크</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0025.html" data-types="전기" data-name="피카츄" data-id="025">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#025</span><img src="media/0025.webp" alt="피카츄"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#025</span><img src="media/images/0025.webp" alt="피카츄"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">피카츄</span>
           <div class="card-types"><span class="type-badge 전기">전기</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0026.html" data-types="전기" data-name="라이츄" data-id="026">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#026</span><img src="media/0026.webp" alt="라이츄"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#026</span><img src="media/images/0026.webp" alt="라이츄"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">라이츄</span>
           <div class="card-types"><span class="type-badge 전기">전기</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0027.html" data-types="땅" data-name="모래두지" data-id="027">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#027</span><img src="media/0027.webp" alt="모래두지"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#027</span><img src="media/images/0027.webp" alt="모래두지"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">모래두지</span>
           <div class="card-types"><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0028.html" data-types="땅" data-name="고지" data-id="028">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#028</span><img src="media/0028.webp" alt="고지"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#028</span><img src="media/images/0028.webp" alt="고지"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">고지</span>
           <div class="card-types"><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0029.html" data-types="독" data-name="니드런♀" data-id="029">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#029</span><img src="media/0029.webp" alt="니드런♀"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#029</span><img src="media/images/0029.webp" alt="니드런♀"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">니드런♀</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0030.html" data-types="독" data-name="니드러나" data-id="030">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#030</span><img src="media/0030.webp" alt="니드러나"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#030</span><img src="media/images/0030.webp" alt="니드러나"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">니드러나</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0031.html" data-types="독 땅" data-name="니드퀸" data-id="031">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#031</span><img src="media/0031.webp" alt="니드퀸"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#031</span><img src="media/images/0031.webp" alt="니드퀸"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">니드퀸</span>
           <div class="card-types"><span class="type-badge 독">독</span><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0032.html" data-types="독" data-name="니드런♂" data-id="032">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#032</span><img src="media/0032.webp" alt="니드런♂"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#032</span><img src="media/images/0032.webp" alt="니드런♂"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">니드런♂</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0033.html" data-types="독" data-name="니드리노" data-id="033">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#033</span><img src="media/0033.webp" alt="니드리노"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#033</span><img src="media/images/0033.webp" alt="니드리노"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">니드리노</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0034.html" data-types="독 땅" data-name="니드킹" data-id="034">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#034</span><img src="media/0034.webp" alt="니드킹"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#034</span><img src="media/images/0034.webp" alt="니드킹"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">니드킹</span>
           <div class="card-types"><span class="type-badge 독">독</span><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0035.html" data-types="페어리" data-name="삐삐" data-id="035">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#035</span><img src="media/0035.webp" alt="삐삐"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#035</span><img src="media/images/0035.webp" alt="삐삐"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">삐삐</span>
           <div class="card-types"><span class="type-badge 페어리">페어리</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0036.html" data-types="페어리" data-name="픽시" data-id="036">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#036</span><img src="media/0036.webp" alt="픽시"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#036</span><img src="media/images/0036.webp" alt="픽시"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">픽시</span>
           <div class="card-types"><span class="type-badge 페어리">페어리</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0037.html" data-types="불꽃" data-name="식스테일" data-id="037">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#037</span><img src="media/0037.webp" alt="식스테일"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#037</span><img src="media/images/0037.webp" alt="식스테일"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">식스테일</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0038.html" data-types="불꽃" data-name="나인테일" data-id="038">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#038</span><img src="media/0038.webp" alt="나인테일"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#038</span><img src="media/images/0038.webp" alt="나인테일"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">나인테일</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0039.html" data-types="노말 페어리" data-name="푸린" data-id="039">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#039</span><img src="media/0039.webp" alt="푸린"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#039</span><img src="media/images/0039.webp" alt="푸린"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">푸린</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 페어리">페어리</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0040.html" data-types="노말 페어리" data-name="푸크린" data-id="040">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#040</span><img src="media/0040.webp" alt="푸크린"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#040</span><img src="media/images/0040.webp" alt="푸크린"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">푸크린</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 페어리">페어리</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0041.html" data-types="독 비행" data-name="주뱃" data-id="041">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#041</span><img src="media/0041.webp" alt="주뱃"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#041</span><img src="media/images/0041.webp" alt="주뱃"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">주뱃</span>
           <div class="card-types"><span class="type-badge 독">독</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0042.html" data-types="독 비행" data-name="골뱃" data-id="042">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#042</span><img src="media/0042.webp" alt="골뱃"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#042</span><img src="media/images/0042.webp" alt="골뱃"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">골뱃</span>
           <div class="card-types"><span class="type-badge 독">독</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0043.html" data-types="풀 독" data-name="뚜벅쵸" data-id="043">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#043</span><img src="media/0043.webp" alt="뚜벅쵸"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#043</span><img src="media/images/0043.webp" alt="뚜벅쵸"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">뚜벅쵸</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0044.html" data-types="풀 독" data-name="냄새꼬" data-id="044">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#044</span><img src="media/0044.webp" alt="냄새꼬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#044</span><img src="media/images/0044.webp" alt="냄새꼬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">냄새꼬</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0045.html" data-types="풀 독" data-name="라플레시아" data-id="045">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#045</span><img src="media/0045.webp" alt="라플레시아"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#045</span><img src="media/images/0045.webp" alt="라플레시아"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">라플레시아</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0046.html" data-types="벌레 풀" data-name="파라스" data-id="046">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#046</span><img src="media/0046.webp" alt="파라스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#046</span><img src="media/images/0046.webp" alt="파라스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">파라스</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 풀">풀</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0047.html" data-types="벌레 풀" data-name="파라섹트" data-id="047">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#047</span><img src="media/0047.webp" alt="파라섹트"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#047</span><img src="media/images/0047.webp" alt="파라섹트"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">파라섹트</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 풀">풀</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0048.html" data-types="벌레 독" data-name="콘팡" data-id="048">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#048</span><img src="media/0048.webp" alt="콘팡"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#048</span><img src="media/images/0048.webp" alt="콘팡"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">콘팡</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0049.html" data-types="벌레 독" data-name="도나리" data-id="049">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#049</span><img src="media/0049.webp" alt="도나리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#049</span><img src="media/images/0049.webp" alt="도나리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">도나리</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0050.html" data-types="땅" data-name="디그다" data-id="050">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#050</span><img src="media/0050.webp" alt="디그다"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#050</span><img src="media/images/0050.webp" alt="디그다"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">디그다</span>
           <div class="card-types"><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0051.html" data-types="땅" data-name="닥트리오" data-id="051">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#051</span><img src="media/0051.webp" alt="닥트리오"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#051</span><img src="media/images/0051.webp" alt="닥트리오"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">닥트리오</span>
           <div class="card-types"><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0052.html" data-types="노말" data-name="나옹" data-id="052">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#052</span><img src="media/0052.webp" alt="나옹"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#052</span><img src="media/images/0052.webp" alt="나옹"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">나옹</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0053.html" data-types="노말" data-name="페르시온" data-id="053">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#053</span><img src="media/0053.webp" alt="페르시온"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#053</span><img src="media/images/0053.webp" alt="페르시온"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">페르시온</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0054.html" data-types="물" data-name="고라파덕" data-id="054">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#054</span><img src="media/0054.webp" alt="고라파덕"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#054</span><img src="media/images/0054.webp" alt="고라파덕"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">고라파덕</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0055.html" data-types="물" data-name="골덕" data-id="055">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#055</span><img src="media/0055.webp" alt="골덕"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#055</span><img src="media/images/0055.webp" alt="골덕"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">골덕</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0056.html" data-types="격투" data-name="망키" data-id="056">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#056</span><img src="media/0056.webp" alt="망키"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#056</span><img src="media/images/0056.webp" alt="망키"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">망키</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0057.html" data-types="격투" data-name="성원숭" data-id="057">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#057</span><img src="media/0057.webp" alt="성원숭"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#057</span><img src="media/images/0057.webp" alt="성원숭"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">성원숭</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0058.html" data-types="불꽃" data-name="가디" data-id="058">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#058</span><img src="media/0058.webp" alt="가디"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#058</span><img src="media/images/0058.webp" alt="가디"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">가디</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0059.html" data-types="불꽃" data-name="윈디" data-id="059">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#059</span><img src="media/0059.webp" alt="윈디"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#059</span><img src="media/images/0059.webp" alt="윈디"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">윈디</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0060.html" data-types="물" data-name="발챙이" data-id="060">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#060</span><img src="media/0060.webp" alt="발챙이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#060</span><img src="media/images/0060.webp" alt="발챙이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">발챙이</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0061.html" data-types="물" data-name="슈륙챙이" data-id="061">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#061</span><img src="media/0061.webp" alt="슈륙챙이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#061</span><img src="media/images/0061.webp" alt="슈륙챙이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">슈륙챙이</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0062.html" data-types="물 격투" data-name="강챙이" data-id="062">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#062</span><img src="media/0062.webp" alt="강챙이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#062</span><img src="media/images/0062.webp" alt="강챙이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">강챙이</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0063.html" data-types="에스퍼" data-name="케이시" data-id="063">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#063</span><img src="media/0063.webp" alt="케이시"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#063</span><img src="media/images/0063.webp" alt="케이시"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">케이시</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0064.html" data-types="에스퍼" data-name="윤겔라" data-id="064">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#064</span><img src="media/0064.webp" alt="윤겔라"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#064</span><img src="media/images/0064.webp" alt="윤겔라"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">윤겔라</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0065.html" data-types="에스퍼" data-name="후딘" data-id="065">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#065</span><img src="media/0065.webp" alt="후딘"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#065</span><img src="media/images/0065.webp" alt="후딘"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">후딘</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0066.html" data-types="격투" data-name="알통몬" data-id="066">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#066</span><img src="media/0066.webp" alt="알통몬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#066</span><img src="media/images/0066.webp" alt="알통몬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">알통몬</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0067.html" data-types="격투" data-name="근육몬" data-id="067">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#067</span><img src="media/0067.webp" alt="근육몬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#067</span><img src="media/images/0067.webp" alt="근육몬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">근육몬</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0068.html" data-types="격투" data-name="괴력몬" data-id="068">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#068</span><img src="media/0068.webp" alt="괴력몬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#068</span><img src="media/images/0068.webp" alt="괴력몬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">괴력몬</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0069.html" data-types="풀 독" data-name="모다피" data-id="069">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#069</span><img src="media/0069.webp" alt="모다피"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#069</span><img src="media/images/0069.webp" alt="모다피"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">모다피</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0070.html" data-types="풀 독" data-name="우츠동" data-id="070">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#070</span><img src="media/0070.webp" alt="우츠동"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#070</span><img src="media/images/0070.webp" alt="우츠동"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">우츠동</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0071.html" data-types="풀 독" data-name="우츠보트" data-id="071">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#071</span><img src="media/0071.webp" alt="우츠보트"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#071</span><img src="media/images/0071.webp" alt="우츠보트"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">우츠보트</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0072.html" data-types="물 독" data-name="왕눈해" data-id="072">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#072</span><img src="media/0072.webp" alt="왕눈해"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#072</span><img src="media/images/0072.webp" alt="왕눈해"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">왕눈해</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0073.html" data-types="물 독" data-name="독파굴" data-id="073">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#073</span><img src="media/0073.webp" alt="독파굴"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#073</span><img src="media/images/0073.webp" alt="독파굴"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">독파굴</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0074.html" data-types="바위 땅" data-name="꼬마돌" data-id="074">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#074</span><img src="media/0074.webp" alt="꼬마돌"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#074</span><img src="media/images/0074.webp" alt="꼬마돌"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">꼬마돌</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0075.html" data-types="바위 땅" data-name="데구리" data-id="075">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#075</span><img src="media/0075.webp" alt="데구리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#075</span><img src="media/images/0075.webp" alt="데구리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">데구리</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0076.html" data-types="바위 땅" data-name="딱구리" data-id="076">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#076</span><img src="media/0076.webp" alt="딱구리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#076</span><img src="media/images/0076.webp" alt="딱구리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">딱구리</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0077.html" data-types="불꽃" data-name="포니타" data-id="077">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#077</span><img src="media/0077.webp" alt="포니타"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#077</span><img src="media/images/0077.webp" alt="포니타"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">포니타</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0078.html" data-types="불꽃" data-name="날씽마" data-id="078">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#078</span><img src="media/0078.webp" alt="날씽마"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#078</span><img src="media/images/0078.webp" alt="날씽마"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">날씽마</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0079.html" data-types="물 에스퍼" data-name="야돈" data-id="079">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#079</span><img src="media/0079.webp" alt="야돈"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#079</span><img src="media/images/0079.webp" alt="야돈"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">야돈</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0080.html" data-types="물 에스퍼" data-name="야도란" data-id="080">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#080</span><img src="media/0080.webp" alt="야도란"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#080</span><img src="media/images/0080.webp" alt="야도란"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">야도란</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0081.html" data-types="전기 강철" data-name="코일" data-id="081">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#081</span><img src="media/0081.webp" alt="코일"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#081</span><img src="media/images/0081.webp" alt="코일"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">코일</span>
           <div class="card-types"><span class="type-badge 전기">전기</span><span class="type-badge 강철">강철</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0082.html" data-types="전기 강철" data-name="레어코일" data-id="082">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#082</span><img src="media/0082.webp" alt="레어코일"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#082</span><img src="media/images/0082.webp" alt="레어코일"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">레어코일</span>
           <div class="card-types"><span class="type-badge 전기">전기</span><span class="type-badge 강철">강철</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0083.html" data-types="노말 비행" data-name="파오리" data-id="083">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#083</span><img src="media/0083.webp" alt="파오리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#083</span><img src="media/images/0083.webp" alt="파오리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">파오리</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0084.html" data-types="노말 비행" data-name="두두" data-id="084">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#084</span><img src="media/0084.webp" alt="두두"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#084</span><img src="media/images/0084.webp" alt="두두"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">두두</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0085.html" data-types="노말 비행" data-name="두트리오" data-id="085">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#085</span><img src="media/0085.webp" alt="두트리오"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#085</span><img src="media/images/0085.webp" alt="두트리오"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">두트리오</span>
           <div class="card-types"><span class="type-badge 노말">노말</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0086.html" data-types="물" data-name="쥬쥬" data-id="086">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#086</span><img src="media/0086.webp" alt="쥬쥬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#086</span><img src="media/images/0086.webp" alt="쥬쥬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">쥬쥬</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0087.html" data-types="물 얼음" data-name="쥬레곤" data-id="087">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#087</span><img src="media/0087.webp" alt="쥬레곤"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#087</span><img src="media/images/0087.webp" alt="쥬레곤"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">쥬레곤</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 얼음">얼음</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0088.html" data-types="독" data-name="질퍽이" data-id="088">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#088</span><img src="media/0088.webp" alt="질퍽이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#088</span><img src="media/images/0088.webp" alt="질퍽이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">질퍽이</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0089.html" data-types="독" data-name="질뻐기" data-id="089">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#089</span><img src="media/0089.webp" alt="질뻐기"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#089</span><img src="media/images/0089.webp" alt="질뻐기"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">질뻐기</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0090.html" data-types="물" data-name="셀러" data-id="090">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#090</span><img src="media/0090.webp" alt="셀러"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#090</span><img src="media/images/0090.webp" alt="셀러"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">셀러</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0091.html" data-types="물 얼음" data-name="파르셀" data-id="091">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#091</span><img src="media/0091.webp" alt="파르셀"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#091</span><img src="media/images/0091.webp" alt="파르셀"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">파르셀</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 얼음">얼음</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0092.html" data-types="고스트 독" data-name="고오스" data-id="092">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#092</span><img src="media/0092.webp" alt="고오스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#092</span><img src="media/images/0092.webp" alt="고오스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">고오스</span>
           <div class="card-types"><span class="type-badge 고스트">고스트</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0093.html" data-types="고스트 독" data-name="고우스트" data-id="093">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#093</span><img src="media/0093.webp" alt="고우스트"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#093</span><img src="media/images/0093.webp" alt="고우스트"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">고우스트</span>
           <div class="card-types"><span class="type-badge 고스트">고스트</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0094.html" data-types="고스트 독" data-name="팬텀" data-id="094">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#094</span><img src="media/0094.webp" alt="팬텀"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#094</span><img src="media/images/0094.webp" alt="팬텀"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">팬텀</span>
           <div class="card-types"><span class="type-badge 고스트">고스트</span><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0095.html" data-types="바위 땅" data-name="롱스톤" data-id="095">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#095</span><img src="media/0095.webp" alt="롱스톤"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#095</span><img src="media/images/0095.webp" alt="롱스톤"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">롱스톤</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0096.html" data-types="에스퍼" data-name="슬리프" data-id="096">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#096</span><img src="media/0096.webp" alt="슬리프"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#096</span><img src="media/images/0096.webp" alt="슬리프"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">슬리프</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0097.html" data-types="에스퍼" data-name="슬리퍼" data-id="097">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#097</span><img src="media/0097.webp" alt="슬리퍼"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#097</span><img src="media/images/0097.webp" alt="슬리퍼"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">슬리퍼</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0098.html" data-types="물" data-name="크랩" data-id="098">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#098</span><img src="media/0098.webp" alt="크랩"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#098</span><img src="media/images/0098.webp" alt="크랩"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">크랩</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0099.html" data-types="물" data-name="킹크랩" data-id="099">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#099</span><img src="media/0099.webp" alt="킹크랩"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#099</span><img src="media/images/0099.webp" alt="킹크랩"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">킹크랩</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0100.html" data-types="전기" data-name="찌리리공" data-id="100">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#100</span><img src="media/0100.webp" alt="찌리리공"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#100</span><img src="media/images/0100.webp" alt="찌리리공"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">찌리리공</span>
           <div class="card-types"><span class="type-badge 전기">전기</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0101.html" data-types="전기" data-name="붐볼" data-id="101">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#101</span><img src="media/0101.webp" alt="붐볼"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#101</span><img src="media/images/0101.webp" alt="붐볼"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">붐볼</span>
           <div class="card-types"><span class="type-badge 전기">전기</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0102.html" data-types="풀 에스퍼" data-name="아라리" data-id="102">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#102</span><img src="media/0102.webp" alt="아라리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#102</span><img src="media/images/0102.webp" alt="아라리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">아라리</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0103.html" data-types="풀 에스퍼" data-name="나시" data-id="103">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#103</span><img src="media/0103.webp" alt="나시"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#103</span><img src="media/images/0103.webp" alt="나시"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">나시</span>
           <div class="card-types"><span class="type-badge 풀">풀</span><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0104.html" data-types="땅" data-name="탕구리" data-id="104">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#104</span><img src="media/0104.webp" alt="탕구리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#104</span><img src="media/images/0104.webp" alt="탕구리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">탕구리</span>
           <div class="card-types"><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0105.html" data-types="땅" data-name="텅구리" data-id="105">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#105</span><img src="media/0105.webp" alt="텅구리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#105</span><img src="media/images/0105.webp" alt="텅구리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">텅구리</span>
           <div class="card-types"><span class="type-badge 땅">땅</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0106.html" data-types="격투" data-name="시라소몬" data-id="106">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#106</span><img src="media/0106.webp" alt="시라소몬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#106</span><img src="media/images/0106.webp" alt="시라소몬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">시라소몬</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0107.html" data-types="격투" data-name="홍수몬" data-id="107">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#107</span><img src="media/0107.webp" alt="홍수몬"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#107</span><img src="media/images/0107.webp" alt="홍수몬"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">홍수몬</span>
           <div class="card-types"><span class="type-badge 격투">격투</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0108.html" data-types="노말" data-name="내루미" data-id="108">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#108</span><img src="media/0108.webp" alt="내루미"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#108</span><img src="media/images/0108.webp" alt="내루미"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">내루미</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0109.html" data-types="독" data-name="또가스" data-id="109">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#109</span><img src="media/0109.webp" alt="또가스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#109</span><img src="media/images/0109.webp" alt="또가스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">또가스</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0110.html" data-types="독" data-name="또도가스" data-id="110">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#110</span><img src="media/0110.webp" alt="또도가스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#110</span><img src="media/images/0110.webp" alt="또도가스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">또도가스</span>
           <div class="card-types"><span class="type-badge 독">독</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0111.html" data-types="땅 바위" data-name="뿔카노" data-id="111">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#111</span><img src="media/0111.webp" alt="뿔카노"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#111</span><img src="media/images/0111.webp" alt="뿔카노"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">뿔카노</span>
           <div class="card-types"><span class="type-badge 땅">땅</span><span class="type-badge 바위">바위</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0112.html" data-types="땅 바위" data-name="코뿌리" data-id="112">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#112</span><img src="media/0112.webp" alt="코뿌리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#112</span><img src="media/images/0112.webp" alt="코뿌리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">코뿌리</span>
           <div class="card-types"><span class="type-badge 땅">땅</span><span class="type-badge 바위">바위</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0113.html" data-types="노말" data-name="럭키" data-id="113">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#113</span><img src="media/0113.webp" alt="럭키"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#113</span><img src="media/images/0113.webp" alt="럭키"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">럭키</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0114.html" data-types="풀" data-name="덩쿠리" data-id="114">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#114</span><img src="media/0114.webp" alt="덩쿠리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#114</span><img src="media/images/0114.webp" alt="덩쿠리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">덩쿠리</span>
           <div class="card-types"><span class="type-badge 풀">풀</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0115.html" data-types="노말" data-name="캥카" data-id="115">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#115</span><img src="media/0115.webp" alt="캥카"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#115</span><img src="media/images/0115.webp" alt="캥카"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">캥카</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0116.html" data-types="물" data-name="쏘드라" data-id="116">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#116</span><img src="media/0116.webp" alt="쏘드라"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#116</span><img src="media/images/0116.webp" alt="쏘드라"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">쏘드라</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0117.html" data-types="물" data-name="시드라" data-id="117">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#117</span><img src="media/0117.webp" alt="시드라"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#117</span><img src="media/images/0117.webp" alt="시드라"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">시드라</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0118.html" data-types="물" data-name="콘치" data-id="118">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#118</span><img src="media/0118.webp" alt="콘치"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#118</span><img src="media/images/0118.webp" alt="콘치"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">콘치</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0119.html" data-types="물" data-name="왕콘치" data-id="119">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#119</span><img src="media/0119.webp" alt="왕콘치"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#119</span><img src="media/images/0119.webp" alt="왕콘치"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">왕콘치</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0120.html" data-types="물" data-name="별가사리" data-id="120">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#120</span><img src="media/0120.webp" alt="별가사리"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#120</span><img src="media/images/0120.webp" alt="별가사리"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">별가사리</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0121.html" data-types="물 에스퍼" data-name="아쿠스타" data-id="121">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#121</span><img src="media/0121.webp" alt="아쿠스타"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#121</span><img src="media/images/0121.webp" alt="아쿠스타"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">아쿠스타</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0122.html" data-types="에스퍼 페어리" data-name="마임맨" data-id="122">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#122</span><img src="media/0122.webp" alt="마임맨"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#122</span><img src="media/images/0122.webp" alt="마임맨"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">마임맨</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span><span class="type-badge 페어리">페어리</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0123.html" data-types="벌레 비행" data-name="스라크" data-id="123">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#123</span><img src="media/0123.webp" alt="스라크"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#123</span><img src="media/images/0123.webp" alt="스라크"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">스라크</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0124.html" data-types="얼음 에스퍼" data-name="루주라" data-id="124">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#124</span><img src="media/0124.webp" alt="루주라"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#124</span><img src="media/images/0124.webp" alt="루주라"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">루주라</span>
           <div class="card-types"><span class="type-badge 얼음">얼음</span><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0125.html" data-types="전기" data-name="에레브" data-id="125">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#125</span><img src="media/0125.webp" alt="에레브"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#125</span><img src="media/images/0125.webp" alt="에레브"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">에레브</span>
           <div class="card-types"><span class="type-badge 전기">전기</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0126.html" data-types="불꽃" data-name="마그마" data-id="126">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#126</span><img src="media/0126.webp" alt="마그마"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#126</span><img src="media/images/0126.webp" alt="마그마"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">마그마</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0127.html" data-types="벌레" data-name="쁘사이저" data-id="127">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#127</span><img src="media/0127.webp" alt="쁘사이저"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#127</span><img src="media/images/0127.webp" alt="쁘사이저"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">쁘사이저</span>
           <div class="card-types"><span class="type-badge 벌레">벌레</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0128.html" data-types="노말" data-name="켄타로스" data-id="128">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#128</span><img src="media/0128.webp" alt="켄타로스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#128</span><img src="media/images/0128.webp" alt="켄타로스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">켄타로스</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0129.html" data-types="물" data-name="잉어킹" data-id="129">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#129</span><img src="media/0129.webp" alt="잉어킹"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#129</span><img src="media/images/0129.webp" alt="잉어킹"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">잉어킹</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0130.html" data-types="물 비행" data-name="갸라도스" data-id="130">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#130</span><img src="media/0130.webp" alt="갸라도스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#130</span><img src="media/images/0130.webp" alt="갸라도스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">갸라도스</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0131.html" data-types="물 얼음" data-name="라프라스" data-id="131">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#131</span><img src="media/0131.webp" alt="라프라스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#131</span><img src="media/images/0131.webp" alt="라프라스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">라프라스</span>
           <div class="card-types"><span class="type-badge 물">물</span><span class="type-badge 얼음">얼음</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0132.html" data-types="노말" data-name="메타몽" data-id="132">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#132</span><img src="media/0132.webp" alt="메타몽"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#132</span><img src="media/images/0132.webp" alt="메타몽"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">메타몽</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0133.html" data-types="노말" data-name="이브이" data-id="133">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#133</span><img src="media/0133.webp" alt="이브이"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#133</span><img src="media/images/0133.webp" alt="이브이"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">이브이</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0134.html" data-types="물" data-name="샤미드" data-id="134">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#134</span><img src="media/0134.webp" alt="샤미드"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#134</span><img src="media/images/0134.webp" alt="샤미드"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">샤미드</span>
           <div class="card-types"><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0135.html" data-types="전기" data-name="쥬피썬더" data-id="135">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#135</span><img src="media/0135.webp" alt="쥬피썬더"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#135</span><img src="media/images/0135.webp" alt="쥬피썬더"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">쥬피썬더</span>
           <div class="card-types"><span class="type-badge 전기">전기</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0136.html" data-types="불꽃" data-name="부스터" data-id="136">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#136</span><img src="media/0136.webp" alt="부스터"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#136</span><img src="media/images/0136.webp" alt="부스터"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">부스터</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0137.html" data-types="노말" data-name="폴리곤" data-id="137">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#137</span><img src="media/0137.webp" alt="폴리곤"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#137</span><img src="media/images/0137.webp" alt="폴리곤"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">폴리곤</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0138.html" data-types="바위 물" data-name="암나이트" data-id="138">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#138</span><img src="media/0138.webp" alt="암나이트"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#138</span><img src="media/images/0138.webp" alt="암나이트"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">암나이트</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0139.html" data-types="바위 물" data-name="암스타" data-id="139">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#139</span><img src="media/0139.webp" alt="암스타"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#139</span><img src="media/images/0139.webp" alt="암스타"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">암스타</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0140.html" data-types="바위 물" data-name="투구" data-id="140">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#140</span><img src="media/0140.webp" alt="투구"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#140</span><img src="media/images/0140.webp" alt="투구"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">투구</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0141.html" data-types="바위 물" data-name="투구푸스" data-id="141">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#141</span><img src="media/0141.webp" alt="투구푸스"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#141</span><img src="media/images/0141.webp" alt="투구푸스"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">투구푸스</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 물">물</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0142.html" data-types="바위 비행" data-name="프테라" data-id="142">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#142</span><img src="media/0142.webp" alt="프테라"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#142</span><img src="media/images/0142.webp" alt="프테라"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">프테라</span>
           <div class="card-types"><span class="type-badge 바위">바위</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0143.html" data-types="노말" data-name="잠만보" data-id="143">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#143</span><img src="media/0143.webp" alt="잠만보"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#143</span><img src="media/images/0143.webp" alt="잠만보"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">잠만보</span>
           <div class="card-types"><span class="type-badge 노말">노말</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0144.html" data-types="얼음 비행" data-name="프리져" data-id="144">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#144</span><img src="media/0144.webp" alt="프리져"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#144</span><img src="media/images/0144.webp" alt="프리져"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">프리져</span>
           <div class="card-types"><span class="type-badge 얼음">얼음</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0145.html" data-types="전기 비행" data-name="썬더" data-id="145">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#145</span><img src="media/0145.webp" alt="썬더"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#145</span><img src="media/images/0145.webp" alt="썬더"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">썬더</span>
           <div class="card-types"><span class="type-badge 전기">전기</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0146.html" data-types="불꽃 비행" data-name="파이어" data-id="146">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#146</span><img src="media/0146.webp" alt="파이어"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#146</span><img src="media/images/0146.webp" alt="파이어"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">파이어</span>
           <div class="card-types"><span class="type-badge 불꽃">불꽃</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0147.html" data-types="드래곤" data-name="미뇽" data-id="147">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#147</span><img src="media/0147.webp" alt="미뇽"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#147</span><img src="media/images/0147.webp" alt="미뇽"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">미뇽</span>
           <div class="card-types"><span class="type-badge 드래곤">드래곤</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0148.html" data-types="드래곤" data-name="신뇽" data-id="148">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#148</span><img src="media/0148.webp" alt="신뇽"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#148</span><img src="media/images/0148.webp" alt="신뇽"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">신뇽</span>
           <div class="card-types"><span class="type-badge 드래곤">드래곤</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0149.html" data-types="드래곤 비행" data-name="망나뇽" data-id="149">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#149</span><img src="media/0149.webp" alt="망나뇽"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#149</span><img src="media/images/0149.webp" alt="망나뇽"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">망나뇽</span>
           <div class="card-types"><span class="type-badge 드래곤">드래곤</span><span class="type-badge 비행">비행</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0150.html" data-types="에스퍼" data-name="뮤츠" data-id="150">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#150</span><img src="media/0150.webp" alt="뮤츠"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#150</span><img src="media/images/0150.webp" alt="뮤츠"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">뮤츠</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
       </a>
       <a class="pokemon-card" href="pokemon/0151.html" data-types="에스퍼" data-name="뮤" data-id="151">
-        <div class="card-icon-area"><span class="pokemon-id-badge">#151</span><img src="media/0151.webp" alt="뮤"
-            class="card-icon" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
+        <div class="card-img-wrap"><span class="card-num">#151</span><img src="media/images/0151.webp" alt="뮤"
+            class="card-img" loading="lazy" onerror="this.onerror=null;this.src='media/egg.png'"></div>
         <div class="card-body"><span class="card-name">뮤</span>
           <div class="card-types"><span class="type-badge 에스퍼">에스퍼</span></div>
         </div>
@@ -1117,3 +1117,4 @@
 </body>
 
 </html>
+

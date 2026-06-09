@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#028</span>
-        <img src="../media/0028.webp" alt="고지" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#028</span>
+        <img src="../media/images/0028.webp" alt="고지" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">고지</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 땅">땅</span></div>
           <span class="detail-category">두더지 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">모래숨기</span><span class="ability-badge hidden">모래해치기 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/028_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/028_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">90 / 255</span>
@@ -45,9 +45,17 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">모래두지에서 진화한 포켓몬. 몸의 가시는 피부가 딱딱해진 것이다. 1년에 1회 오래된 가시가 빠지고 새로운 가시가 밑에서 돋아난다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">모래두지에서 진화한 포켓몬. 몸의 가시는 피부가 딱딱해진 것이다. 1년에 1회 오래된 가시가 빠지고 새로운 가시가 밑에서 돋아난다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <a class="evo-node evo-link" href="0027.html">모래두지<div class="evo-tooltip"><img src="../media/images/0027.webp"></div></a>
+            <span class="evo-arrow">→</span>
+            <span class="evo-node evo-current">고지</span>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +64,13 @@
       <a class="nav-btn" href="0029.html">#029 니드런♀ &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 

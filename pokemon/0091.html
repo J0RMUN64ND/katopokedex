@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#091</span>
-        <img src="../media/0091.webp" alt="파르셀" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#091</span>
+        <img src="../media/images/0091.webp" alt="파르셀" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">파르셀</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 물">물</span><span class="type-badge 얼음">얼음</span></div>
           <span class="detail-category">조개 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">조가비갑옷</span><span class="ability-badge">스킬링크</span><span class="ability-badge hidden">방진 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/091_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/091_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">60 / 255</span>
@@ -45,9 +45,17 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">셀러에서 진화한 포켓몬. 들이마신 바닷물을 뒤쪽으로 기운차게 뿜어내서 바닷속을 헤엄친다. 같은 방법으로 가시도 발사한다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">셀러에서 진화한 포켓몬. 들이마신 바닷물을 뒤쪽으로 기운차게 뿜어내서 바닷속을 헤엄친다. 같은 방법으로 가시도 발사한다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <a class="evo-node evo-link" href="0090.html">셀러<div class="evo-tooltip"><img src="../media/images/0090.webp"></div></a>
+            <span class="evo-arrow">→</span>
+            <span class="evo-node evo-current">파르셀</span>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +64,13 @@
       <a class="nav-btn" href="0092.html">#092 고스 &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 

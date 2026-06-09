@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#001</span>
-        <img src="../media/0001.webp" alt="이상해씨" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#001</span>
+        <img src="../media/images/0001.webp" alt="이상해씨" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">이상해씨</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 풀">풀</span><span class="type-badge 독">독</span></div>
           <span class="detail-category">씨앗 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">심록</span><span class="ability-badge hidden">엽록소 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/001_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/001_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">45 / 255</span>
@@ -45,9 +45,19 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">양지에서 낮잠 자는 모습을 볼 수 있다. 태양의 빛을 많이 받으면 등의 씨앗이 크게 자란다. 이상해풀로 진화한다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">양지에서 낮잠 자는 모습을 볼 수 있다. 태양의 빛을 많이 받으면 등의 씨앗이 크게 자란다. 이상해풀로 진화한다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <span class="evo-node evo-current">이상해씨</span>
+            <span class="evo-arrow">→</span>
+            <a class="evo-node evo-link" href="0002.html">이상해풀<div class="evo-tooltip"><img src="../media/images/0002.webp"></div></a>
+            <span class="evo-arrow">→</span>
+            <a class="evo-node evo-link" href="0003.html">이상해꽃<div class="evo-tooltip"><img src="../media/images/0003.webp"></div></a>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +66,13 @@
       <a class="nav-btn" href="0002.html">#002 이상해풀 &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 

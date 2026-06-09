@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#036</span>
-        <img src="../media/0036.webp" alt="픽시" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#036</span>
+        <img src="../media/images/0036.webp" alt="픽시" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">픽시</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 페어리">페어리</span></div>
           <span class="detail-category">요정 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">헤롱헤롱바디</span><span class="ability-badge">매직가드</span><span class="ability-badge hidden">천진 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/036_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/036_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">25 / 255</span>
@@ -45,9 +45,17 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">삐에서 진화한 포켓몬. 날개를 사용하여 날아가듯 뛰어간다. 물 위에서 걷는 것도 할 수 있다. 조용한 달밤에 호수를 걷는다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">삐에서 진화한 포켓몬. 날개를 사용하여 날아가듯 뛰어간다. 물 위에서 걷는 것도 할 수 있다. 조용한 달밤에 호수를 걷는다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <a class="evo-node evo-link" href="0035.html">삐삐<div class="evo-tooltip"><img src="../media/images/0035.webp"></div></a>
+            <span class="evo-arrow">→</span>
+            <span class="evo-node evo-current">픽시</span>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +64,13 @@
       <a class="nav-btn" href="0037.html">#037 식스테일 &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 

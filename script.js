@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   setupFilterEvents();
 });
 
 function setupFilterEvents() {
-  const buttons = document.querySelectorAll(".filter-btn");
   const searchInput = document.getElementById("search-input");
+  if (!searchInput) return;
+
+  const buttons = document.querySelectorAll(".filter-btn");
   const cards = document.querySelectorAll(".pokemon-card");
-  const countEl = document.getElementById("results-count");
+  const countEl = document.getElementById("result-count");
 
   function applyFilters() {
     const activeType = document.querySelector(".filter-btn.active")?.dataset.type ?? "all";
@@ -38,3 +40,4 @@ function setupFilterEvents() {
 
   searchInput.addEventListener("input", applyFilters);
 }
+

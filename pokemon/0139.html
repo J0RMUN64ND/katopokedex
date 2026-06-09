@@ -11,12 +11,12 @@
     <a class="logo" href="../202313515.html">KANTO POKÉDEX</a>
     <nav></nav>
   </header>
-  <div class="detail-wrap">
+  <div class="detail-page">
     <a class="back-link" href="../202313515.html">&#8592; 포켓몬 목록으로</a>
     <div class="detail-card">
-      <div class="detail-img-area">
-        <span class="detail-num">#139</span>
-        <img src="../media/0139.webp" alt="암스타" class="detail-img" onerror="this.onerror=null;this.src='../media/egg.png'">
+      <div class="detail-img-wrap">
+        <span class="detail-number">#139</span>
+        <img src="../media/images/0139.webp" alt="암스타" class="detail-img" onerror="this.onerror=null;this.src='../media/images/egg.png'">
       </div>
       <div class="detail-info">
         <div class="detail-name">암스타</div>
@@ -24,17 +24,17 @@
           <div class="detail-types"><span class="type-badge 바위">바위</span><span class="type-badge 물">물</span></div>
           <span class="detail-category">나선 포켓몬</span>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">특성</div>
+        <div class="info-block">
+          <div class="section-title">특성</div>
           <div class="ability-list"><span class="ability-badge">쓱쓱</span><span class="ability-badge">조가비갑옷</span><span class="ability-badge hidden">깨어진 갑옷 (숨겨진 특성)</span></div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">울음소리</div>
-          <audio src="../cry/139_00.wav" controls></audio>
+        <div class="info-block">
+          <div class="section-title">울음소리</div>
+          <audio src="../media/cry/139_00.wav" controls></audio>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">포획률 &amp; 성비</div>
-          <div class="stat-row">
+        <div class="info-block">
+          <div class="section-title">포획률 &amp; 성비</div>
+          <div class="stat-list">
             <div class="stat-item">
               <span class="stat-label">포획률</span>
               <span class="stat-value">45 / 255</span>
@@ -45,9 +45,17 @@
             </div>
           </div>
         </div>
-        <div class="detail-section">
-          <div class="detail-section-title">생태</div>
-          <p class="ecology-text">암나이트에서 진화한 포켓몬. 촉수를 조종해서 먹이를 붙잡는다. 껍질이 너무 커진 걸로 인해 움직임이 둔해져서 절멸했다고 생각 되어 진다.</p>
+        <div class="info-block">
+          <div class="section-title">생태</div>
+          <p class="poke-desc">암나이트에서 진화한 포켓몬. 촉수를 조종해서 먹이를 붙잡는다. 껍질이 너무 커진 걸로 인해 움직임이 둔해져서 절멸했다고 생각 되어 진다.</p>
+        </div>
+        <div class="info-block">
+          <div class="section-title">진화</div>
+          <div class="evo-chain">
+            <a class="evo-node evo-link" href="0138.html">암나이트<div class="evo-tooltip"><img src="../media/images/0138.webp"></div></a>
+            <span class="evo-arrow">→</span>
+            <span class="evo-node evo-current">암스타</span>
+          </div>
         </div>
       </div>
     </div>
@@ -56,8 +64,13 @@
       <a class="nav-btn" href="0140.html">#140 투구 &#8594;</a>
     </div>
   </div>
-<script src="detail.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
